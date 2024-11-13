@@ -1,23 +1,24 @@
-# React Webpack Project
+# Rendering Arrays in React
 
-This is a simple React application set up with Webpack for development and production builds. The app demonstrates how to integrate React with Webpack for modern JavaScript development.
+This project is a React lab focused on rendering components from an array of data stored in state.
 
-## Features
+## Project Overview
 
-- React app bundled with Webpack
-- Hot-reloading and development server setup
-- Optimized production build
-- React state management with `useState` hook
+The objective of this project is to display a list of learner profiles, each with multiple scores, using React components and state management. The data includes each learner's name, bio, and score history, and the project demonstrates how to manage and render arrays in a React application.
 
+## Requirements
+
+- **Components**:
+  - `App` component holds the `learners` array in its state and renders a `Learner` component for each learner.
+  - `Learner` component renders the learner’s `name` and `bio`, and passes each score to the `Score` component.
+  - `Score` component displays each score’s `date` and `score` properties.
+- **Styling**: Layout and styling are left to the developer's discretion, but the project should have a clean, user-friendly interface.
+  
 ## Project Setup
-
-### Prerequisites
-
-Make sure you have [Node.js](https://nodejs.org/) installed.
 
 ### Installation
 
-Clone the repository and install the dependencies:
+Clone the repository and install dependencies:
 
 ```bash
 git clone <repository_url>
@@ -25,15 +26,15 @@ cd <project_folder>
 npm install
 ```
 
-### Development Mode
+### Running the Project
 
-To run the project in development mode with hot reloading:
+To start the project in development mode:
 
 ```bash
 npm start
 ```
 
-Your app will be available at [http://localhost:3000](http://localhost:3000).
+This will open the project at [http://localhost:3000](http://localhost:3000).
 
 ### Production Build
 
@@ -68,17 +69,10 @@ The build will be output in the `dist/` folder.
 /package.json       - Project metadata and dependencies
 ```
 
-## License
+## Provided Data
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The learners' data is initialized in the `App` component's state, structured as an array of learner objects. Each learner has a `name`, `bio`, and an array of `scores`.
 
-```
+---
 
-### Key Sections:
-1. **Project Overview**: A brief description of the project, what it does, and the technologies used.
-2. **Setup Instructions**: Instructions for setting up and running the project.
-3. **Commands**: Commonly used commands like `npm start` and `npm run build`.
-4. **Folder Structure**: A simple overview of the project's file structure to help new developers navigate.
-5. **License**: Indicates the project is MIT licensed, or you can customize it if you have another license.
-
-This template can be easily customized if you need to add more specific instructions, for example, about features, external dependencies, or specific setup details.
+Этот README.md достаточно краток и содержит все ключевые инструкции для работы с проектом.
